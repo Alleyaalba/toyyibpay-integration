@@ -29,7 +29,7 @@ def create_bill():
         'billPayorInfo': 1,
         'billAmount': bill_amount,
         'returnUrl': 'https://edu-ecoshop1.odoo.com/payment/confirmation',
-        'callbackUrl': 'https://your-link-render.com/toyyibpay-webhook' # <-- Ganti nanti
+        'callbackUrl': 'https://toyyibpay-integration.onrender.com/toyyibpay-webhook'
     }
 
     response = requests.post('https://toyyibpay.com/index.php/api/createBill', data=payload)
