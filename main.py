@@ -28,6 +28,7 @@ def create_bill():
         'billPriceSetting': 1,
         'billPayorInfo': 1,
         'billAmount': bill_amount,
+        'billTo': f"Customer {order_id}", 
         'returnUrl': 'https://edu-ecoshop1.odoo.com/payment/confirmation',
         'callbackUrl': 'https://toyyibpay-integration.onrender.com/toyyibpay-webhook'
     }
